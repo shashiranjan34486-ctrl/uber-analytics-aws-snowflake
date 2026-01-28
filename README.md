@@ -62,7 +62,6 @@ Files are stored in an AWS S3 bucket.
 ---
 
 ## 🔄 Data Loading Example
-```sql
 COPY INTO UBER_TRIP_DETAILS
 FROM @S2/Uber_Trip_Details.csv
 FILE_FORMAT = (TYPE='CSV' FIELD_DELIMITER=',' SKIP_HEADER=1)
@@ -71,7 +70,6 @@ ON_ERROR='CONTINUE';
 ---
 
 ##  🚀 Key Learnings
-
 - AWS S3 bucket management  
 - IAM role-based access for Snowflake  
 - Snowflake storage integrations and external stages  
